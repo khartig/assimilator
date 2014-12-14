@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.rioproject.tools.webster.WebsterUTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 sec

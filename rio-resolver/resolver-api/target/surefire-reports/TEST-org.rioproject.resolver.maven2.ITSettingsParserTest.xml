@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.474" errors="3" skipped="0" tests="3" name="org.rioproject.resolver.maven2.ITSettingsParserTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="23.7-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7579"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/khartig/IdeaProjects/Assimilator/rio-resolver/resolver-api"/>
+    <property name="java.runtime.version" value="1.7.0_17-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/n5/rm369wj529173v1g8vh3rt7w0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.0.5/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="US-ASCII"/>
+    <property name="java.library.path" value="/Users/khartig/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.1"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/khartig"/>
+    <property name="user.timezone" value="America/Denver"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="idea.launcher.bin.path" value="/Applications/IntelliJ IDEA 13.app/bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="khartig"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.0.5/libexec/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_17"/>
+    <property name="java.ext.dirs" value="/Users/khartig/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.0.5/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.467" classname="org.rioproject.resolver.maven2.ITSettingsParserTest" name="parserTest">
+    <error message="Unable to find a usable Maven settings file (global or in user home directory)" type="java.io.IOException">java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest(ITSettingsParserTest.java:71)
+</error>
+    <system-out>
+Settings file (src/test/conf/mirrored-settings.xml), Repositories (9), Mirrored (5)
+-----------------------------------------------------------------------------------
+(1) id:        fraz
+    url:       http://external:8081/nexus/content/groups/public
+    releases:  false
+    snapshots: true
+
+(2) id:        bar-not-mirrored
+    url:       file://HARRY.POTTER/
+    releases:  true
+    snapshots: false
+
+(3) id:        local-file-system-repo-not-mirrored
+    url:       file://local.file.system/
+    releases:  true
+    snapshots: true
+
+(4) id:        localhost-repo-not-mirrored
+    url:       http://localhost:80801/repo/
+    releases:  true
+    snapshots: true
+
+(5) id:        west
+    url:       http://voldemort:8088/nexus/content/groups/public
+    releases:  true
+    snapshots: true
+
+(6) id:        east
+    url:       http://blutarsky:8088/nexus/content/groups/public
+    releases:  true
+    snapshots: true
+
+(7) id:        north
+    url:       http://blutarsky:8088/nexus/content/groups/public
+    releases:  true
+    snapshots: true
+
+(8) id:        jane-not-mirrored
+    url:       http://NOT.MIRRORED.COM/
+    releases:  true
+    snapshots: true
+
+(9) id:        central
+    url:       http://external:8081/nexus/content/groups/public
+    releases:  true
+    snapshots: false
+</system-out>
+  </testcase>
+  <testcase time="0.005" classname="org.rioproject.resolver.maven2.ITSettingsParserTest" name="parserTest2">
+    <error message="Unable to find a usable Maven settings file (global or in user home directory)" type="java.io.IOException">java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest2(ITSettingsParserTest.java:103)
+</error>
+    <system-out>
+Settings file (src/test/conf/jrsettings.xml), Repositories (4), Mirrored (0)
+----------------------------------------------------------------------------
+(1) id:        internal
+    url:       http://rds.dev:8180/archiva/repository/internal/
+    releases:  true
+    snapshots: false
+
+(2) id:        snapshots
+    url:       http://rds.dev:8180/archiva/repository/snapshots/
+    releases:  false
+    snapshots: true
+
+(3) id:        real_repository
+    url:       http://build01.dev.real.com:9999/repository/
+    releases:  true
+    snapshots: true
+
+(4) id:        central
+    url:       http://repo1.maven.org/maven2/
+    releases:  true
+    snapshots: false
+</system-out>
+  </testcase>
+  <testcase time="0.002" classname="org.rioproject.resolver.maven2.ITSettingsParserTest" name="parserTest3">
+    <error message="Unable to find a usable Maven settings file (global or in user home directory)" type="java.io.IOException">java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest3(ITSettingsParserTest.java:135)
+</error>
+    <system-out>
+Settings file (/Users/khartig/.m2/settings.xml), Repositories (1), Mirrored (0)
+-------------------------------------------------------------------------------
+(1) id:        central
+    url:       http://repo1.maven.org/maven2/
+    releases:  true
+    snapshots: false
+</system-out>
+  </testcase>
+</testsuite>

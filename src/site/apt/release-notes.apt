@@ -1,0 +1,73 @@
+------
+Release Notes
+ ------
+Dennis Reedy
+ ------
+5 April 2011
+ ------
+
+Release Notes
+
+  The Rio team would like to announce the release of Rio 4.2.
+
+  Rio 4.2 is {{{./download.html}download}}
+
+* 4.2 Release Notes
+
+ The full list of changes can be found in our {{{http://jira.rio-project.org}issue management system}}, and is reproduced below.
+    
+** Bug
+
+    * {{{http://jira.rio-project.org/browse/RIO-267}RIO-267}} - CLI does not display monitor attributes when invoked in non-interactive mode
+
+    * {{{http://jira.rio-project.org/browse/RIO-297}RIO-297}} - Obtaining pid for forked service
+
+    * {{{http://jira.rio-project.org/browse/RIO-298}RIO-298}} - Rio 4.1 Release is not compiled with gnostic
+
+    * {{{http://jira.rio-project.org/browse/RIO-299}RIO-299}} - Typo in EventConfig.groovy in the Event Example
+
+    * {{{http://jira.rio-project.org/browse/RIO-300}RIO-300}} - If a forked service detects that its parent cybernode has gone away, the service's preDestoy method is not called
+
+    * {{{http://jira.rio-project.org/browse/RIO-301}RIO-301}} - EventHandler not set correctly for SLA
+
+    * {{{http://jira.rio-project.org/browse/RIO-302}RIO-302}} - Dependency type of pom causes createJar to fail
+
+    * {{{http://jira.rio-project.org/browse/RIO-303}RIO-303}} - Rio test manager deletes log files from previous test
+
+    * {{{http://jira.rio-project.org/browse/RIO-304}RIO-304}} - If repository declaration in pom spans lines the parsed repository contains illegal characters
+
+    * {{{http://jira.rio-project.org/browse/RIO-305}RIO-305}} - Allow support to be able to resolve artifacts from a local repository that is served up
+
+    * {{{http://jira.rio-project.org/browse/RIO-306}RIO-306}} - When changing groups to ALL_GROUPS (or ALL, all, or all_groups) using the CLI, the group is not set correctly
+
+    * {{{http://jira.rio-project.org/browse/RIO-308}RIO-308}} - RioTestRunner test configuration does not accept a maven artifact id for its opstring
+
+    * {{{http://jira.rio-project.org/browse/RIO-309}RIO-309}} - Pom properties used in dependency version numbers are not resolved at deploy time
+
+    * {{{http://jira.rio-project.org/browse/RIO-310}RIO-310}} - Failed forked services are not destroyed when the OpString is undeployed.
+
+    []
+    
+    
+**  New Feature
+
+    * {{{http://jira.rio-project.org/browse/RIO-271}RIO-271}} - Add Cybernode enlist/release semantics to CLI
+    
+    * {{{http://jira.rio-project.org/browse/RIO-296}RIO-296}} - Limit port range for exporters and Webster
+
+     []
+
+
+* Release notes for previous versions
+
+     * {{{http://jira.rio-project.org/secure/ReleaseNote.jspa?version=10030&styleName=Text&projectId=10000&Create=Create}4.1}}
+
+     * {{{http://jira.rio-project.org/secure/ReleaseNote.jspa?version=10030&styleName=Text&projectId=10000&Create=Create}4.0}}
+
+     * {{{http://jira.rio-project.org/secure/ReleaseNote.jspa?version=10011&styleName=Html&projectId=10000&Create=Create}4.0 M3}}
+
+     * {{{http://jira.rio-project.org/secure/ReleaseNote.jspa?version=10011&styleName=Html&projectId=10000&Create=Create}4.0 M2}}
+
+     * {{{http://jira.rio-project.org/secure/ReleaseNote.jspa?version=10010&styleName=Html&projectId=10000&Create=Create}4.0 M1}}
+
+     []

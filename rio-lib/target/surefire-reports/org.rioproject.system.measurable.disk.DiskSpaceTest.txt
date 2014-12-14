@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.rioproject.system.measurable.disk.DiskSpaceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec <<< FAILURE!
+createAndVerifyDiskSpaceClass(org.rioproject.system.measurable.disk.DiskSpaceTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: Utilization should be > 0
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.rioproject.system.measurable.disk.DiskSpaceTest.createAndVerifyDiskSpaceClass(DiskSpaceTest.java:44)
+
+createAndVerifyDiskSpaceWithLowerThresholdBeingCrossed(org.rioproject.system.measurable.disk.DiskSpaceTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: Utilization should be > 0
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.rioproject.system.measurable.disk.DiskSpaceTest.createAndVerifyDiskSpaceWithLowerThresholdBeingCrossed(DiskSpaceTest.java:55)
+
+createAndVerifyDiskSpaceWithUpperThresholdBeingCrossed(org.rioproject.system.measurable.disk.DiskSpaceTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: Utilization should be > 0
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.rioproject.system.measurable.disk.DiskSpaceTest.createAndVerifyDiskSpaceWithUpperThresholdBeingCrossed(DiskSpaceTest.java:67)
+

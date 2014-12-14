@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <body>
+        <section>
+            <p>
+                Releases are available from the
+                <a href="http://www.rio-project.org">Rio</a>
+                project site.
+            </p>
+
+            <h2>License and Dependencies</h2>
+            <p>
+                Rio is distributed under the <a href="license.html"> Apache License, version 2.0</a>.
+            </p>
+
+            <p>
+                Rio is distributed with dependencies. Dependencies are additional
+                software required for running Rio. Note that each of these libraries
+                is subject to the respective license; check the respective project
+                distribution/website before using any of them in your own environment.
+            </p>
+            <p>
+                Once you've downloaded a release, you can check it for authenticity.
+                The MD5 link is an MD5 checksum file, used to ensure that the file
+                downloaded properly.
+            </p>
+
+            <h2>Download Rio 5.0 M3</h2>
+            <p>
+                Rio 5.0 M3 is the third milestone delivery for Rio 5.0. is a recommended update.
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Link</th>
+                        <th>Size</th>
+                        <th>Signature</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Rio 5.0 M3 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M3.zip">Download</a></td>
+                        <td>25 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M3.zip.md5">MD5</a></td>
+                        <td align="center">06/2013</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Rio Installer</h2>
+
+            <p>
+                The Rio Installer is a Java installer that installs Rio, and
+                allows to select which parts you'd like to install. For Windows users,
+                it also adds some useful shortcuts in the Windows menu.
+                <a href="http://www.rio-project.org/releases/rio-5.0-M3-installer.jar">Download Rio 5.0 M3 using the installer</a>
+            </p>
+
+            <h2>Previous Releases</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Link</th>
+                        <th>Size</th>
+                        <th>Signature</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Rio 5.0-M2 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M2.zip">Download</a></td>
+                        <td>18 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M2.zip.md5">MD5</a></td>
+                        <td align="center">1/2013</td>
+                    </tr>
+                    <tr>
+                        <td>Rio 5.0-M1 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M1.zip">Download</a></td>
+                        <td>18 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-5.0-M1.zip.md5">MD5</a></td>
+                        <td align="center">12/2012</td>
+                    </tr>
+                    <tr>
+                        <td>Rio 4.2 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.2.zip">Download</a></td>
+                        <td>18 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.2.zip.md5">MD5</a></td>
+                        <td align="center">4/2011</td>
+                    </tr>
+                    <tr>
+                        <td>Rio 4.1 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.1.zip">Download</a></td>
+                        <td>18 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.1.zip.md5">MD5</a></td>
+                        <td align="center">12/2010</td>
+                    </tr>
+                    <tr>
+                        <td>Rio 4.0 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.0.zip">Download</a></td>
+                        <td>17.6 MB</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-4.0.zip.md5">MD5</a></td>
+                        <td align="center">12/2010</td>
+                    </tr>
+                    <tr>
+                        <td>Rio 3.2 (zip)</td>
+                        <td><a href="http://www.rio-project.org/releases/rio-3_2.zip">Download</a></td>
+                        <td>4.2 MB</td>
+                        <td></td>
+                        <td align="center">2/2010</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </body>
+</document>

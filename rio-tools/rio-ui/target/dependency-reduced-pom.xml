@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>main</artifactId>
+    <groupId>org.rioproject</groupId>
+    <version>5.0-M3</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>rio-ui</artifactId>
+  <name>Module :: Rio Management User Interface</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <includes>
+                  <include>org.rioproject.cybernode:cybernode-api</include>
+                  <include>org.rioproject.monitor:monitor-api</include>
+                  <include>org.rioproject:rio-api</include>
+                  <include>org.rioproject:rio-lib</include>
+                  <include>org.rioproject:rio-platform</include>
+                  <include>org.rioproject.resolver:resolver-api</include>
+                  <include>org.rioproject:rio-start</include>
+                  <include>org.rioproject:webster</include>
+                  <include>org.rioproject.event-collector:event-collector-api</include>
+                  <include>net.jini.lookup:jmx-lookup</include>
+                  <include>net.jini.lookup:serviceui</include>
+                  <include>net.jini:jsk-lib</include>
+                  <include>net.jini:jsk-platform</include>
+                  <include>org.prefuse:prefuse</include>
+                  <include>org.swinglabs:swingx</include>
+                  <include>org.slf4j:*</include>
+                </includes>
+              </artifactSet>
+              <transformers>
+                <transformer>
+                  <manifestEntries>
+                    <Main-Class>org.rioproject.tools.ui.Main</Main-Class>
+                    <Implementation-Title>Rio Project</Implementation-Title>
+                    <Implementation-Version>${project.version}</Implementation-Version>
+                    <Rio-Version>${project.version}</Rio-Version>
+                    <Rio-Build>${maven.build.timestamp}</Rio-Build>
+                    <Class-Path>groovy-all-${groovy.version}.jar</Class-Path>
+                  </manifestEntries>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

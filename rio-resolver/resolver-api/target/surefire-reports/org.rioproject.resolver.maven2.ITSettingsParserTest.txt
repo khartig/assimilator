@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: org.rioproject.resolver.maven2.ITSettingsParserTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.476 sec <<< FAILURE!
+parserTest(org.rioproject.resolver.maven2.ITSettingsParserTest)  Time elapsed: 0.467 sec  <<< ERROR!
+java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest(ITSettingsParserTest.java:71)
+
+parserTest2(org.rioproject.resolver.maven2.ITSettingsParserTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest2(ITSettingsParserTest.java:103)
+
+parserTest3(org.rioproject.resolver.maven2.ITSettingsParserTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.io.IOException: Unable to find a usable Maven settings file (global or in user home directory)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.getMavenSettingsFile(ITSettingsParserTest.java:185)
+	at org.rioproject.resolver.maven2.ITSettingsParserTest.parserTest3(ITSettingsParserTest.java:135)
+
