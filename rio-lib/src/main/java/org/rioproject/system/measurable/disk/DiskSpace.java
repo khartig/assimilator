@@ -38,14 +38,19 @@ import java.io.File;
  */
 public class DiskSpace extends MeasurableCapability implements DiskSpaceMBean {
     public static final String VIEW = "org.rioproject.system.disk.CalculableDiskSpaceView";
+
     /** Iteration value for calculating utilization of sampleSize >1 */
     private int count;
-    /** Temporary value for used diskspace*/
-    private double tempUtilization;    
+
+    /** Temporary value for used disk space*/
+    private double tempUtilization;
+
     /** Computed utilization value */
     private double utilization;
+
     /** Component for Configuration and Logging */
     static final String COMPONENT = "org.rioproject.system.measurable.disk";
+
     /** A Logger for this class */
     static Logger logger = LoggerFactory.getLogger(COMPONENT);
 
@@ -56,8 +61,10 @@ public class DiskSpace extends MeasurableCapability implements DiskSpaceMBean {
      */
     public DiskSpace(Configuration config) {
         super(SystemWatchID.DISK_SPACE, COMPONENT, config);
-        if(!isEnabled())
+        if (!isEnabled()) {
             return;
+        }
+
         setView(VIEW);
         try {
             ThresholdValues tVals = 
@@ -139,16 +146,18 @@ public class DiskSpace extends MeasurableCapability implements DiskSpaceMBean {
     
     public void checkValue() {
         count++;
-        if(monitor==null)
+        if (monitor==null) {
             return;
-        DiskSpaceUtilization dsUtilization =
-            (DiskSpaceUtilization)monitor.getMeasuredResource();
+        }
+
+        DiskSpaceUtilization dsUtilization = (DiskSpaceUtilization)monitor.getMeasuredResource();
         tempUtilization += dsUtilization.getValue();
-        if(count==sampleSize) {
+        if(count == sampleSize) {
             utilization = tempUtilization/sampleSize;
             count = 0;
             tempUtilization = 0;
         }
+
         long now = System.currentTimeMillis();
         addWatchRecord(new CalculableDiskSpace(getId(), dsUtilization, now));
         setLastMeasuredResource(dsUtilization);

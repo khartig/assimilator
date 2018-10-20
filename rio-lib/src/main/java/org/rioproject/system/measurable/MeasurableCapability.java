@@ -67,8 +67,10 @@ public abstract class MeasurableCapability extends PeriodicWatch implements Reso
     private Configuration config;
     /** Whether or not this measurable capability is enabled */
     private AtomicBoolean isEnabled = new AtomicBoolean(true);
+
     /** The {@link MeasurableMonitor} to use */
     protected MeasurableMonitor monitor;
+
     protected MeasuredResource lastMeasured;
     /** Defines the default history size */
     public final static int DEFAULT_COLLECTION_SIZE = 10;
